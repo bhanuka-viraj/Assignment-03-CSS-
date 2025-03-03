@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 03</title>
+    <link rel="stylesheet" href="normalized/normalize.css">
+
+    <style>
+        body{
+            background-color: lightblue;
+            width: 100vw;
+            height: 500vh;
+        }
+        #div1{
+            width:15vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 50%;
+            border: 5px solid gray;
+
+            position: fixed;
+            /*position: absolute;*/
+            left: 0;
+            top: 15vh;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+
+        }
+        #div2{
+            width:14vw;
+            aspect-ratio: 1/1;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 5px solid red;
+
+            position: fixed;
+            left: 0;
+            top: 15vh;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        body>div:nth-child(2){
+            width:14vw;
+            aspect-ratio: 1/1;
+            background-color: purple ;
+            border-radius: 50%;
+
+            position: absolute;
+            left:0;
+            top: 100vh;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        #div3>P{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+        body>div:nth-child(3){
+            width:14vw;
+            aspect-ratio: 1/1;
+            background-color: blue ;
+            border-radius: 50%;
+
+            position: absolute;
+            left:0;
+            top: 200vh;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        #div4>P{
+            font-size: 13px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+        body>div:nth-child(4){
+            width:14vw;
+            aspect-ratio: 1/1;
+            background-color: yellow;
+            border-radius: 50%;
+
+            position: absolute;
+            left:0;
+            top: 300vh;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        #div5>P{
+            font-size: 13px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+        <div id="div2">
+
+        </div>
+    </div>
+
+    <div id="div3">
+        <p> Hello </p>
+    </div>
+
+    <div id="div4">
+        <p> Welcome To </p>
+    </div>
+
+    <div id="div5">
+        <p> Institute of software engineering </p>
+    </div>
+
+
+</body>
+</html>
